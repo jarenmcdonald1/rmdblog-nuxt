@@ -11,3 +11,33 @@ body {
   color: var(--text);
   @apply transition-colors duration-200 ease-in-out;
 }
+
+/* main page elements */
+
+.banner-con {
+  max-height: 300px;
+
+  @apply w-full grid grid-cols-1 grid-rows-1 justify-items-center items-center overflow-hidden rounded-lg;
+
+  & .banner-img {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    @apply h-auto w-full object-cover;
+  }
+
+  & .banner-text-con {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@screen md {
+  .banner-con {
+    max-height: 400px;
+  }
+}

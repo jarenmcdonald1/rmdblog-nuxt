@@ -20,6 +20,9 @@ export default {
         : 'http://localhost:3000',
     lang: SITE_INFO.sitelang || 'en-US'
   },
+  image: {
+    /* options for nuxt-img */
+  },
   /*
    ** Headers of the page
    */
@@ -43,11 +46,11 @@ export default {
       {
         rel: 'preload',
         as: 'style',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100,300;400;500;700;900&display=swap'
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100,300;400;500;700;900&display=swap',
         media: 'print',
         onload: `this.media='all'`
       }
@@ -55,7 +58,7 @@ export default {
     noscript: [
       {
         innerHTML:
-          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">'
+          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100,300;400;500;700;900&display=swap">'
       }
     ],
     __dangerouslyDisableSanitizers: ['noscript']
@@ -75,7 +78,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxt/image', '@nuxtjs/pwa'],
   /*
    ** Nuxt.js modules
    */

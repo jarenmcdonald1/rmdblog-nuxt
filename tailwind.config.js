@@ -11,20 +11,21 @@ module.exports = {
     darkSelector: '.dark-mode',
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+        serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         gray: {
           '50': 'var(--color-gray-50)',      // #F9FAFB
-          '100': 'var(--color-gray-100)',    // #F3F4F6
-          '200': 'var(--color-gray-200)',    // #E5E7EB
-          '300': 'var(--color-gray-300)',    // #D1D5DB
-          '400': 'var(--color-gray-400)',    // #9CA3AF
-          default: 'var(--color-gray)',      // #6B7280
-          '600': 'var(--color-gray-600)',    // #4B5563
-          '700': 'var(--color-gray-700)',    // #374151
-          '800': 'var(--color-gray-800)',    // #1F2937
-          '900': 'var(--color-gray-900)',    // #111827
+          '100': 'var(--color-gray-100)',    // #f8f9fa
+          '200': 'var(--color-gray-200)',    // #e9ecef
+          '300': 'var(--color-gray-300)',    // #dee2e6
+          '400': 'var(--color-gray-400)',    // #ced4da
+          default: 'var(--color-gray)',      // #adb5bd
+          '600': 'var(--color-gray-600)',    // #6c757d
+          '700': 'var(--color-gray-700)',    // #495057
+          '800': 'var(--color-gray-800)',    // #343a40
+          '900': 'var(--color-gray-900)',    // #212529
         },
         primary: {
           '100': 'var(--color-primary-100)', // #ECEFF5
@@ -36,6 +37,27 @@ module.exports = {
           '700': 'var(--color-primary-700)', // #2C3A57
           '800': 'var(--color-primary-800)', // #1C263B
           '900': 'var(--color-primary-900)', // #0D131E
+        },
+        teal: {
+          '100': 'var(--color-teal-100)',
+          '200': 'var(--color-teal-200)',
+          '300': 'var(--color-teal-300)',
+          '400': 'var(--color-teal-400)',
+          '500': 'var(--color-teal-500)',
+          '600': 'var(--color-teal-600)',
+          '700': 'var(--color-teal-700)',
+          default: 'var(--color-teal-400)',
+        },
+        pink: {
+          '100': 'var(--color-pink-100)',
+          '200': 'var(--color-pink-200)',
+          '300': 'var(--color-pink-300)',
+          '400': 'var(--color-pink-400)',
+          '500': 'var(--color-pink-500)',
+          '600': 'var(--color-pink-600)',
+          '700': 'var(--color-pink-700)',
+          '800': 'var(--color-pink-800)',
+          default: 'var(--color-pink-300)',
         },
       },
       screens: {

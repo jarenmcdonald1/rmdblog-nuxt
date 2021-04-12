@@ -4,44 +4,64 @@
   * The CSS Variables are then used in tailwind.config.js so that e.g. `bg-primary-200` can be used.
   */
 :root {
-  --color-primary-100: #ECEFF5;
-  --color-primary-200: #C3CBDC;
-  --color-primary-300: #9BA8C2;
-  --color-primary-400: #7686A6;
-  --color-primary:     #526488;
-  --color-primary-600: #3E4F70;
-  --color-primary-700: #2C3A57;
-  --color-primary-800: #1C263B;
-  --color-primary-900: #0D131E;
+  --color-primary-100: #eceff5;
+  --color-primary-200: #c3cbdc;
+  --color-primary-300: #9ba8c2;
+  --color-primary-400: #7686a6;
+  --color-primary: #526488;
+  --color-primary-600: #3e4f70;
+  --color-primary-700: #2c3a57;
+  --color-primary-800: #1c263b;
+  --color-primary-900: #0d131e;
 
-  --color-gray-50:     #F9FAFB;
-  --color-gray-100:    #F3F4F6;
-  --color-gray-200:    #E5E7EB;
-  --color-gray-300:    #D1D5DB;
-  --color-gray-400:    #9CA3AF;
-  --color-gray:        #6B7280;
-  --color-gray-600:    #4B5563;
-  --color-gray-700:    #374151;
-  --color-gray-800:    #1F2937;
-  --color-gray-900:    #111827;
+  --color-white: #ffffff;
+  --color-black: #111111;
 
-  --text: var(--color-primary-200);
-  --text-secondary: var(--color-primary-400);
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
 
-  --bg: var(--color-gray-900);
-  --bg-secondary: var(--color-gray-800);
+  --color-teal-100: #ccffff;
+  --color-teal-200: #9deae8;
+  --color-teal-300: #66cccc;
+  --color-teal-400: #339999;
+  --color-teal-500: #006666;
+  --color-teal-600: #003333;
+  --color-teal-700: #021918;
 
-  --border-color: var(--color-primary-400);
-  --border-color-secondary: var(--color-primary);
+  --color-pink-100: #ffccff;
+  --color-pink-200: #cc99cc;
+  --color-pink-300: #cc66cc;
+  --color-pink-400: #b05bb2;
+  --color-pink-500: #8d4191;
+  --color-pink-600: #642e68;
+  --color-pink-700: #3c1b3f;
+  --color-pink-800: #1a0e1c;
+
+  --text: var(--color-white);
+  --text-secondary: var(--color-teal-100);
+
+  --bg: var(--color-teal-600);
+  --bg-secondary: var(--color-teal-700);
+
+  --border-color: var(--color-teal-700);
+  --border-color-secondary: var(--color-teal-600);
 }
 
 .light-mode {
-  --text: var(--color-primary-800);
-  --text-secondary: var(--color-primary-600);
+  --text: var(--color-gray-800);
+  --text-secondary: var(--color-pink-400);
 
-  --bg: var(--color-gray-200);
+  --bg: var(--color-white);
   --bg-secondary: var(--color-gray-100);
 
-  --border-color: var(--color-primary);
-  --border-color-secondary: var(--color-primary-600);
+  --border-color: var(--color-gray-400);
+  --border-color-secondary: var(--color-gray-500);
 }

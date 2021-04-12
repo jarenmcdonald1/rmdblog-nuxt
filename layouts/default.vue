@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <div class="spacing"></div>
     <Header />
     <nuxt />
     <ColorModePicker />
