@@ -1,5 +1,7 @@
 # Rachel's Blog Site
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a4f59c6-4d0a-48c4-89e3-0533f95ae787/deploy-status)](https://app.netlify.com/sites/rmdblog-test/deploys)
+
 View live site here: [rmdholistics.com](https://rmdholistics.com/)
 
 ### About the site
