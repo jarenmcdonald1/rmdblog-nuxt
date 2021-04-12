@@ -46,7 +46,8 @@ module.exports = {
           '500': 'var(--color-teal-500)',
           '600': 'var(--color-teal-600)',
           '700': 'var(--color-teal-700)',
-          default: 'var(--color-teal-400)',
+          '700': 'var(--color-teal-800)',
+          default: 'var(--color-teal-500)',
         },
         pink: {
           '100': 'var(--color-pink-100)',

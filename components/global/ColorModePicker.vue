@@ -63,7 +63,7 @@ export default {
   height: 44px;
   background-color: var(--bg-secondary);
   border-color: var(--border-color);
-  @apply relative m-0 p-2 top-0 cursor-pointer rounded border transition-all duration-200 ease-in-out;
+  @apply relative m-0 p-2 top-0 cursor-pointer rounded border transition-all duration-200 ease-in-out text-gray-400;
 
   &:hover {
     transform: translateY(-1px);

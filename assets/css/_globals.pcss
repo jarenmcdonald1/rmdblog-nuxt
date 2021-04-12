@@ -36,8 +36,49 @@ body {
   }
 }
 
+.infoCard-con {
+  grid-template-rows: minmax(150px, 250px) 40px auto;
+  @apply grid;
+
+  & .infoCard-img-con {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  & .infoCard-img {
+    @apply h-full w-full object-cover rounded-lg shadow-lg;
+  }
+
+  & .infoCard-text-con {
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+    @apply px-4;
+  }
+  & .infoCard-text {
+    max-width: 650px;
+    @apply bg-white rounded-lg px-4 py-3 shadow-lg;
+  }
+}
+
 @screen md {
   .banner-con {
     max-height: 400px;
+  }
+
+  .infoCard-con {
+    grid-template-rows: minmax(auto, 1fr) 2fr minmax(auto, 1fr);
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+
+    & .infoCard-img-con {
+      grid-column: 1/3;
+    }
+    & .infoCard-img {
+      max-width: 650px;
+    }
+
+    & .infoCard-text-con {
+      grid-column: 2/4;
+      @apply px-0 justify-self-end self-end;
+    }
   }
 }

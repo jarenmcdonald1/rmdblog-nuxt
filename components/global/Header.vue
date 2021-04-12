@@ -1,6 +1,6 @@
 <template>
 
-  <header class="fixed top-0 w-full bg-white py-2 px-3 sm:flex sm:justify-between sm:items-center">
+  <header class="header-main-con sm:flex sm:justify-between sm:items-center">
     <div class="header-con">
 
       <div>
@@ -45,6 +45,11 @@ export default {
 
 <style lang="postcss" scoped>
 
+.header-main-con {
+  background-color: rgba(255,255,255,0.85);
+  @apply fixed top-0 w-full py-2 px-3;
+}
+
 .logo-img {
   @apply w-auto h-24;
 }
@@ -62,7 +67,7 @@ export default {
 }
 
 .nav-con {
-  @apply py-3 px-4 bg-white items-center justify-center;
+  @apply py-3 px-4 bg-transparent items-center justify-center;
 }
 
 .nav-links {
@@ -73,19 +78,23 @@ export default {
   }
 }
 
-.light-mode {}
-
 @screen sm {
   .nav-con {
     @apply flex;
   }
 
   .nav-links {
-    @apply mb-0 mx-2 px-3 py-3 font-light text-gray-600 bg-transparent;
+    @apply mb-0 mx-1 px-3 py-2 text-base font-light text-gray-600 bg-transparent;
 
     &:hover {
       @apply bg-gray-300 text-gray-900;
     }
+  }
+}
+
+.light-mode {
+  & .header-main-con {
+    background-color: rgba(255,255,255,0.75);
   }
 }
 
