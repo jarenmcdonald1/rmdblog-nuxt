@@ -1,3 +1,25 @@
+# Rachel's Blog Site
+
+View live site here: [rmdholistics.com](https://rmdholistics.com/)
+
+### About the site
+
+This is a business site meant to attract potential clients and existing customers to my services. I use the blog to post updates and stories that keep users coming back for more content!
+
+### Improvements
+
+NuxtJS and Vue
+
+### Tools used to develop:
+
+- Adobe Illustrator, Photoshop, XD, Media Encoder
+- HTML5, CSS, SASS, Git, JavaScript
+- Netlify CMS
+
+## Like what you see?
+
+Developed by Jaren McDonald. Check out my portfolio for more [jaren.ca](https://jaren.ca/) Say hi! jaren.mcd@gmail.com
+
 # 🏗️ Boilerplate for Nuxt, Tailwind & NetlifyCMS
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cb2d4cc5-8a65-4940-81ce-4456ff96e6db/deploy-status)](https://app.netlify.com/sites/ntn-boilerplate/deploys) ← replace with [your own](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/general#deploy-status-badge)
@@ -23,6 +45,7 @@ An opinionated starter template for a quick start with the following technologie
 - Nuxt-content (w/ exensible support for markdown and code-blocks)
 
 ##### Optional extra setup
+
 - Git LFS (store uploaded images outside the main repo)
 - Netlify LM (Netlify’s Git LFS support)
 
@@ -33,17 +56,19 @@ Use the deploy button to get your own copy of the repository.
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/knogobert/ntn-boilerplate&stack=cms)
 
 This will setup everything needed for running the CMS:
- - A new repository in your GitHub account with the code
- - Full Continuous Deployment to Netlify's global CDN network
- - Control users and access with Netlify Identity
- - Manage content with Netlify CMS and Nuxt-content
+
+- A new repository in your GitHub account with the code
+- Full Continuous Deployment to Netlify's global CDN network
+- Control users and access with Netlify Identity
+- Manage content with Netlify CMS and Nuxt-content
 
 Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite. Start with by registering a regular email-account (not OAuth yet!) with a [generated password](https://passwordwolf.com/).
 
 You should be up and running, ready for personalization!
 
 ### These extra steps are only necessary if you want to upload large media in Netlify CMS:
-This way it doesn't clutter up your repo with large unmanageable files. But *do know* that it is easier to add later than undoing it later.
+
+This way it doesn't clutter up your repo with large unmanageable files. But _do know_ that it is easier to add later than undoing it later.
 
 1. **[Install git-lfs](https://git-lfs.github.com/)** on your computer and remove the `#` in the project's `.gitattributes`
 

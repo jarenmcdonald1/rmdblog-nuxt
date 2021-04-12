@@ -1,8 +1,8 @@
 {
-  "name": "ntn-boilerplate",
-  "version": "2.0.1",
+  "name": "rmdholistics",
+  "version": "2.0",
   "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
-  "author": "Sven Parker <sven@svenparker.com> (https://svenparker.com)",
+  "author": "Jaren McDonald <jaren.mcd@gmail.com> (https://jaren.ca)",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
