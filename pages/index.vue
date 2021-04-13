@@ -6,7 +6,7 @@
       <h2 class="subtitle text-center">Boilerplate</h2>
     </section>
 
-    <section class="banner-con mb-8">
+    <section class="banner-con mb-10 sm:mb-20 md:mb-40">
       <nuxt-img class="banner-img" src="/img/rachel-texas.jpg" alt="My visit to Texas" />
       <div class="banner-text-con">
         <div class="banner-text">
@@ -38,8 +38,58 @@
 
     </section>
 
-    <section class="mt-8">
-      <h3 class="text-teal-500 dark:text-primary-400 max-w-5xl mx-auto">Latest blog post</h3>
+    <section id="whoWork" class="infoCard-con reversed">
+
+      <div class="infoCard-img-con">
+        <nuxt-img class="infoCard-img" src="/img/grain-bowl.jpg" alt="breakfast grain bowl" loading="lazy" fit="cover" />
+      </div>
+
+      <div class="infoCard-text-con">
+        <div class="infoCard-text">
+          <h3>Who we work with</h3>
+          <ul>
+            <li>Dance Studios</li>
+            <li>Dance Companies</li>
+            <li>Athletes</li>
+            <li>Individual Dancers</li>
+            <li>Families & Individuals</li>
+            <li>Everyone</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="whatDoes" class="infoCard-con">
+
+      <div class="infoCard-img-con">
+        <nuxt-img class="infoCard-img" src="/img/sliced-fruit.jpg" alt="colourful sliced fruits" loading="lazy" fit="cover" />
+      </div>
+
+      <div class="infoCard-text-con">
+        <div class="infoCard-text">
+          <h3>What does a Holistic Nutritionist do?</h3>
+          <p>A Holistic Nutritionist works with dancers, athletes, individuals, families, groups, and everyone on ways to improve nutrition, energy, strength and promote health and wellness and prevent disease.</p>
+          <p>This is achieved by offering the following services:</p>
+          <ul>
+            <li>Diet and Lifestyle Evaluation</li>
+            <li>Teach Healthy Eating</li>
+            <li>Grocery Store Shopping Tours</li>
+            <li>Family Meal Planning</li>
+            <li>Suggestions for Improving Wellness</li>
+            <li>Suggestions for Managing Stress</li>
+            <li>Meal Plans for improved mood, weight and strength</li>
+            <li>Nutritional Speaker and Workshop Services</li>
+            <li>Personal Client Consultations</li>
+            <li>Advise Clients on Supplementation to aid increased wellness</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="mt-8" id="indexBlogCon">
+      <h3 class="mb-4 text-4xl font-serif leading-8 text-pink-500 dark:text-pink-500 md:text-5xl md:leading-tight">Latest blog posts:</h3>
       <posts post-type="blog" :amount="3" />
     </section>
 

@@ -1,0 +1,80 @@
+<template>
+
+  <div class="w-full">
+
+    <footer class="footer-main-con">
+
+      <div class="footer-nav-con">
+        <nuxt-link class="nav-links" to="#">About</nuxt-link>
+        <nuxt-link class="nav-links" to="#">Services</nuxt-link>
+        <nuxt-link class="nav-links" to="#">Contact</nuxt-link>
+      </div>
+
+      <div class="hidden">
+        <a href="#" title="...">Fb</a>
+      </div>
+
+    </footer>
+
+    <div class="copyright-con">
+      <p class="copyright-text">&copy; <span class="copyright-year"></span> <a class="copyright-link" href="https://jaren.ca" title="Visit Jaren's Site">Jaren McDonald</a></p>  
+    </div>  
+
+  </div>
+
+</template>
+
+<script>
+export default {
+  name: 'Footer',
+  data() {
+    return {
+      isOpen: false,
+    }
+  }
+}
+</script>
+
+<style lang="postcss" scoped>
+
+.footer-main-con {
+  @apply mt-6 w-full py-6 px-3 bg-pink-700;
+}
+
+.footer-nav-con {
+  @apply flex flex-col items-center justify-center;
+
+  & .nav-links {
+    @apply px-3 py-2 rounded-lg mb-3 bg-transparent text-center text-lg text-pink-300;
+
+    &:hover {
+      @apply text-pink-100 bg-pink-600;
+    }
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}
+
+.copyright-con {
+  @apply w-full py-3 bg-pink-800;
+
+  & .copyright-text {
+    @apply text-sm text-center text-pink-600;
+  }
+  & .copyright-link {
+    @apply fill-current text-pink-600 no-underline;
+  }
+}
+
+@screen sm {
+  .footer-nav-con {
+    @apply flex-row;
+
+    & .nav-links {
+      @apply mb-0 mx-2 text-base;
+    }
+  }
+}
+
+</style>

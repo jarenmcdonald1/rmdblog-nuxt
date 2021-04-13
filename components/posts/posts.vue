@@ -3,6 +3,7 @@
     <li
       v-for="(post, index) in posts"
       :key="index"
+      class="md:h-full md:px-3 md:place-self-stretch"
     >
       <nuxt-link
         :to="`${postType}/${post.slug}`"
@@ -23,11 +24,11 @@
 
         <template v-else>
           <span class="w-full">
-            <span class="flex justify-between align-baseline">
+            <span class="flex md:flex-col justify-between align-baseline">
               <h3 class="card-title">{{ post.title }}</h3>
               <h6
                 v-if="post.createdAt"
-                class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
+                class="text-sm self-start inline-block mt-0 py-1 px-2 bg-gray-400 dark:bg-pink-600 text-gray-700 dark:text-gray-200 text-base font-normal rounded whitespace-no-wrap"
               >{{ formatDate(post.createdAt) }}</h6>
             </span>
             <p class="mt-2">{{ post.description }}</p>

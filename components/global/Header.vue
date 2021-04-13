@@ -261,7 +261,7 @@ export default {
   .light-mode {
     & .nav-links {
       &:hover {
-        @apply bg-pink-100 text-pink-700;
+        @apply bg-pink-500 text-white;
       }
     }
 

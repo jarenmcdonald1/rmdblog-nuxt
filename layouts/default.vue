@@ -3,6 +3,7 @@
     <Header />
     <nuxt />
     <ColorModePicker />
+    <Footer />
   </div>
 </template>
 

@@ -2,15 +2,16 @@
   .cards {
     @apply w-full py-4 rounded-lg text-left;
     & .card {
-      @apply flex flex-col justify-between items-start max-w-5xl mx-auto px-4 py-4 rounded border border-solid border-primary;
+      max-width: 600px;
+      @apply flex flex-col justify-between items-start mx-auto px-4 py-4 rounded-lg border border-pink-700 bg-pink-700 shadow transition duration-200 ease-in-out;
 
       & .cover-image {
-        @apply mb-0 w-full rounded-sm;
+        @apply mb-0 w-full rounded-lg;
       }
 
       &.card--clickable {
         &:hover {
-          @apply border-primary-300 bg-primary-800 text-white;
+          @apply bg-pink-600 text-white shadow-lg;
           & .card-title {
             @apply text-white;
           }
@@ -27,7 +28,11 @@
     @apply block w-full duration-100;
   }
   .card-title {
-    @apply font-bold;
+    @apply font-medium font-serif text-pink-200 text-2xl;
+  }
+
+  p {
+    @apply font-light;
   }
 
   .cover-image {
@@ -38,17 +43,21 @@
   .light-mode {
     & .cards {
       & .card {
-        @apply border-primary-400;
+        max-width: 600px;
+        @apply border-gray-400 bg-gray-100;
 
         &.card--clickable {
           &:hover {
-            @apply border-primary bg-primary-200 text-primary-900;
+            @apply bg-gray-200;
             & .card-title {
-              @apply text-primary-900;
+              @apply text-pink-400;
             }
           }
         }
       }
+    }
+    & .card-title {
+      @apply text-pink-600 text-2xl;
     }
   }
 
@@ -79,10 +88,23 @@
   }
   @screen md {
     .cards {
+      @apply flex justify-center items-center place-items-stretch;
+
       & .card {
+        @apply h-full;
+
         & .cover-image {
           @apply w-1/3;
         }
+      }
+
+      & .card-title {
+        @apply mb-3;
+      }
+
+      & li + li,
+      & .card + .card {
+        @apply mt-0;
       }
     }
   }
