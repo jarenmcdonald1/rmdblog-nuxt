@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
         serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
+        accent: ['Permanent Marker', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         gray: {
@@ -58,7 +59,7 @@ module.exports = {
           '600': 'var(--color-pink-600)',
           '700': 'var(--color-pink-700)',
           '800': 'var(--color-pink-800)',
-          default: 'var(--color-pink-300)',
+          default: 'var(--color-pink-500)',
         },
       },
       screens: {

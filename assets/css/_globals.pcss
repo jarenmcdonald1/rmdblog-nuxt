@@ -15,9 +15,7 @@ body {
 /* main page elements */
 
 .banner-con {
-  max-height: 300px;
-
-  @apply w-full grid grid-cols-1 grid-rows-1 justify-items-center items-center overflow-hidden rounded-lg;
+  @apply w-full h-screen grid grid-cols-1 grid-rows-1 justify-items-center items-center;
 
   & .banner-img {
     grid-row-start: 1;
@@ -25,7 +23,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
 
-    @apply h-auto w-full object-cover;
+    @apply h-full w-full object-cover object-left;
   }
 
   & .banner-text-con {
@@ -33,12 +31,14 @@ body {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
+
+    @apply px-6;
   }
 }
 
 .infoCard-con {
   grid-template-rows: minmax(150px, 250px) 40px auto;
-  @apply grid;
+  @apply grid text-gray-200;
 
   & .infoCard-img-con {
     grid-column: 1/2;
@@ -51,18 +51,33 @@ body {
   & .infoCard-text-con {
     grid-column: 1/2;
     grid-row: 2/4;
-
-    @apply px-4;
+    @apply px-2;
   }
   & .infoCard-text {
     max-width: 650px;
-    @apply bg-white rounded-lg px-4 py-3 shadow-lg;
+    @apply bg-pink-700 rounded-lg px-4 py-3 shadow-lg;
+
+    & h3 {
+      @apply text-4xl;
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4 {
+      @apply font-serif leading-8;
+    }
   }
 }
 
 @screen md {
   .banner-con {
-    max-height: 400px;
+    & .banner-text-con {
+      @apply px-8;
+    }
+    & .infoCard-text {
+      @apply px-6 py-4;
+    }
   }
 
   .infoCard-con {
@@ -79,6 +94,14 @@ body {
     & .infoCard-text-con {
       grid-column: 2/4;
       @apply px-0 justify-self-end self-end;
+    }
+  }
+}
+
+.light-mode {
+  & .infoCard-con {
+    & .infoCard-text {
+      @apply bg-gray-100;
     }
   }
 }

@@ -94,14 +94,14 @@
     @apply transition-colors duration-200 ease-in-out;
   }
 
-  /* user created classes */
+  /* added custom classes */
 
   .banner-text {
-    text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.6);
-    @apply font-serif text-5xl text-white text-center;
+    @apply py-3 px-3 text-center;
 
-    & .banner-text-span {
-      @apply border-b-4 text-white border-teal-500;
+    & h2 {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      @apply font-accent text-5xl text-white leading-10;
     }
   }
 
@@ -213,8 +213,12 @@
       }
     }
 
-    .banner-text {
-      @apply text-6xl;
+    .banner-text-con {
+      & .banner-text {
+        & h2 {
+          @apply text-6xl;
+        }
+      }
     }
   }
 
@@ -244,8 +248,13 @@
       @apply leading-relaxed;
     }
 
-    .banner-text {
-      font-size: 6rem;
+    .banner-text-con {
+      & .banner-text {
+        & h2 {
+          font-size: 6rem;
+          @apply leading-none;
+        }
+      }
     }
   }
 }
