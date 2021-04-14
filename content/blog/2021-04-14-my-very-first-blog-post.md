@@ -1,5 +1,5 @@
 ---
-title: My Very First Blog Post
+title: MY VERY FIRST BLOG POST!
 date: 2020-06-04T03:41:26.300Z
 description: Let's get to know each other!
 cover: /img/img_3421.jpg
