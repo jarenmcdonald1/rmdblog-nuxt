@@ -75,10 +75,11 @@
         default: 10,
         validator: (val) => val >= 0 && val < 100,
       },
-      sortBy: { // ? https://content.nuxtjs.org/fetching#sortbykey-direction
+      sortBy: { 
+        // ? https://content.nuxtjs.org/fetching#sortbykey-direction
         type: Object,
         default: () => ({
-          key: 'slug',
+          key: 'date',
           direction: 'desc' // you probably want 'asc' here
         }),
         validator: (obj) => typeof obj.key === 'string' && typeof obj.direction === 'string',

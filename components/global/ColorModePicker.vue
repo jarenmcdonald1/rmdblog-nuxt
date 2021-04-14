@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed bottom-0 left-0 m-3 z-90">
+  <div class="fixed bottom-0 left-0 m-3 z-40">
     <component :is="`icon-${color}`" @click="changeColorMode" @keypress.enter="changeColorMode" title="Toggle background color" tabindex="0" />
   </div>
 </template>
