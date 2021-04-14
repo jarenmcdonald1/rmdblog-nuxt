@@ -1,13 +1,13 @@
 <template>
-  <ul v-if="posts.length > 0" class="cards">
-    <li
+  <div v-if="posts.length > 0" class="cards-main-con">
+    <div
       v-for="(post, index) in posts"
       :key="index"
-      class="card-li"
+      class="cards-con"
     >
       <nuxt-link
         :to="`${postType}/${post.slug}`"
-        class="card card--clickable"
+        class="card-link card--clickable"
       >
         <template v-if="postType === 'projects'">
           <span class="flex-1">
@@ -23,20 +23,35 @@
         </template>
 
         <template v-else>
-          <span class="card-con w-full">
-            <span class="flex md:flex-col justify-between align-baseline">
+          <div class="card-con">
+
+            <div v-if="post.cover" class="card-img-con">
+              <nuxt-img
+                v-if="post.cover"
+                :src="post.cover" 
+                class="post-img"
+                loading="lazy" 
+              />
+            </div>
+
+            <div class="card-text-con">
+              <div class="card-text">
               <h3 class="card-title">{{ post.title }}</h3>
               <h6
                 v-if="post.createdAt"
-                class="text-sm self-start inline-block mt-0 py-1 px-2 bg-gray-400 dark:bg-pink-600 text-gray-700 dark:text-gray-200 text-base font-normal rounded whitespace-no-wrap"
-              >{{ formatDate(post.createdAt) }}</h6>
-            </span>
-            <p class="mt-2">{{ post.description }}</p>
-          </span>
+                class="leading-tight font-normal text-sm"
+              >{{ formatDate(post.date) }}</h6>
+              <p class="pb-6 leading-tight">{{ post.description }}</p>
+              <nuxt-link :to="`${postType}/${post.slug}`" class="post-btn">Read more</nuxt-link>
+              </div>
+            </div>
+
+          </div>
         </template>
       </nuxt-link>
-    </li>
-  </ul>
+    </div>
+  </div>
+
   <div v-else-if="loading" class="cards">
     <div v-for="placeholder in placeholderClasses" :key="placeholder.id" class="card">
       <content-placeholders :rounded="true" :class="placeholder">

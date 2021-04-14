@@ -1,29 +1,62 @@
 @layer base {
-  .cards {
+  .cards-main-con {
     @apply w-full py-4 rounded-lg text-left;
-    & .card {
-      max-width: 600px;
-      @apply flex flex-col justify-between items-start mx-auto px-4 py-4 rounded-lg border border-pink-700 bg-pink-700 shadow transition duration-200 ease-in-out;
+    & .cards-con {
+      @apply w-full flex flex-col justify-between items-start mx-auto px-4 py-4 bg-transparent;
 
-      & .cover-image {
-        @apply mb-0 w-full rounded-lg;
+      & .card-img-con {
+        max-height: 300px;
+        @apply mb-4 w-full overflow-hidden rounded-lg;
+
+        & .post-img {
+          min-height: 100%;
+          min-width: 100%;
+          @apply w-auto h-auto object-cover object-center transition duration-200 ease-in-out;
+        }
       }
 
-      &.card--clickable {
-        &:hover {
-          @apply bg-pink-600 text-white shadow-lg;
+      & .card-text-con {
+        & .card-text {
+          @apply bg-transparent;
+
+          & p,
+          & h6 {
+            @apply font-light leading-tight;
+          }
+
           & .card-title {
-            @apply text-white;
+            @apply mb-4 font-medium text-3xl leading-none;
+          }
+          & .post-btn {
+            @apply rounded-full px-4 py-2 border border-gray-200;
+
+            &:hover {
+              @apply bg-gray-100 border-gray-100 text-pink-700;
+            }
+          }
+        }
+      }
+
+      & .card--clickable {
+        & .card-con {
+          @apply w-full px-3 pt-3 pb-6 bg-pink-700 rounded-lg shadow border border-transparent transition duration-200 ease-in-out;
+
+          &:hover {
+            @apply bg-pink-600 text-white shadow-lg;
+
+            & .post-img {
+              @apply opacity-75;
+            }
+
+            & .card-title {
+              @apply text-white;
+            }
           }
         }
       }
     }
-
-    & li + li,
-    & .card + .card {
-      @apply mt-4;
-    }
   }
+
   .card {
     @apply block w-full duration-100;
   }
@@ -36,10 +69,14 @@
     @apply w-full object-cover rounded my-4;
   }
 
+  .card-link {
+    max-width: 600px;
+    @apply mx-auto;
+  }
+
   .light-mode {
     & .cards {
       & .card {
-        max-width: 600px;
         @apply border-gray-400 bg-gray-100;
 
         &.card--clickable {
@@ -73,18 +110,37 @@
   }
 
   @screen sm {
-    .cards {
-      & .card {
+    .cards-main-con {
+      & .cards-con {
         @apply flex-row;
+
         & .cover-image {
           @apply mt-0 ml-2 w-1/2;
+        }
+
+        & .card-img-con {
+          @apply rounded-none rounded-t-lg;
+
+          & .post-img {
+            @apply rounded-none rounded-t-lg;
+          }
+        }
+
+        & .card-text-con {
+          @apply px-6;
+        }
+
+        & .card--clickable {
+          & .card-con {
+            @apply px-0 pt-0;
+          }
         }
       }
     }
   }
   @screen md {
-    .cards {
-      @apply flex justify-center items-center place-items-stretch;
+    .cards-main-con {
+      @apply flex justify-around items-center place-items-stretch;
 
       & .card-li {
         @apply h-full px-3;
@@ -105,6 +161,77 @@
       & li + li,
       & .card + .card {
         @apply mt-0;
+      }
+
+      & .cards-con {
+        @apply px-1;
+
+        & .card-img-con {
+          max-height: 180px;
+
+          & .post-img {
+            min-height: 180px;
+          }
+        }
+
+        & .card-text-con {
+          @apply px-4;
+        }
+      }
+    }
+
+    .card-link {
+      max-width: 300px;
+    }
+  }
+  @screen xl {
+    .card-link {
+      max-width: 400px;
+    }
+
+    .cards-main-con {
+      & .cards-con {
+        & .card-img-con {
+          max-height: 225px;
+
+          & .post-img {
+            min-height: 225px;
+          }
+        }
+        & .card-text-con {
+          @apply px-8;
+        }
+      }
+    }
+  }
+
+  .light-mode {
+    & .cards-main-con {
+      & .cards-con {
+        & .card-text-con {
+          & .card-text {
+            & .post-btn {
+              @apply text-pink-700 border-2 border-pink-700;
+
+              &:hover {
+                @apply text-gray-200 bg-pink-700;
+              }
+            }
+          }
+        }
+        & .card--clickable {
+          & .card-con {
+            @apply bg-gray-100 border-gray-200 shadow-md;
+
+            &:hover {
+              @apply bg-gray-200 shadow-lg;
+
+              & .card-title {
+                @apply text-pink-700;
+              }
+            }
+          }
+        }
       }
     }
   }
