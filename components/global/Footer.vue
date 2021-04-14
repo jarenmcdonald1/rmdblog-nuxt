@@ -7,6 +7,7 @@
       <div class="footer-nav-con">
         <nuxt-link class="nav-links" to="#">About</nuxt-link>
         <nuxt-link class="nav-links" to="#">Services</nuxt-link>
+      <nuxt-link class="nav-links" to="/blog">Blog</nuxt-link>
         <nuxt-link class="nav-links" to="#">Contact</nuxt-link>
       </div>
 
@@ -17,7 +18,7 @@
     </footer>
 
     <div class="copyright-con">
-      <p class="copyright-text">&copy; <span class="copyright-year"></span> <a class="copyright-link" href="https://jaren.ca" title="Visit Jaren's Site">Jaren McDonald</a></p>  
+      <p class="copyright-text">&copy; <span class="copyright-year">{{new Date().getFullYear()}}</span> <a class="copyright-link" href="https://jaren.ca" title="Visit Jaren's Site">Jaren McDonald</a></p>  
     </div>  
 
   </div>
