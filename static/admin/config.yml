@@ -12,14 +12,14 @@ public_folder: /img
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
-  - label: 'Site settings'
+  - label: 'Site settings',
     name: 'site'
     files:
-      - label: 'Info'
+      - label: 'Info',
         name: 'info'
         file: 'content/site/info.json'
         format: 'json'
-         editor:
+        editor:
           preview: false
         fields:
           - { label: Site Name, name: sitename, widget: string, hint: 'This is used for the site title' }
@@ -48,14 +48,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - {
-          label: 'Cover Image',
-          name: 'cover',
-          widget: 'image',
-          hint: 'Images sized 1200px x 800px work best.',
-          required: false,
-          allow_multiple: false,
-        }
+      - { label: 'Cover Image', name: 'cover', widget: 'image', hint: 'Images sized 1200px x 800px work best.', required: false, allow_multiple: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
       - {
           label: 'Gallery',
