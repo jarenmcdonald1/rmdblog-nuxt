@@ -1,6 +1,8 @@
 ---
 title: How to edit the content
+date: 2021-04-14T01:04:42.950Z
 description: And what to expect when running a repo-based CMS
+cover: /img/sliced-fruit.jpg
 ---
 
 It is easy to write **markdown**-*enabled* content like this placeholder text, with support for images and even code snippets.
