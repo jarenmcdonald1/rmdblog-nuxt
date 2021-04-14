@@ -116,7 +116,7 @@
 
   .nuxt-content {
     max-width: 80ch;
-    @apply my-8;
+    @apply my-8 px-4;
 
     & h1,
     & h2,
@@ -124,6 +124,7 @@
     & h4,
     & h5,
     & h6 {
+      @apply mt-10 font-serif font-medium;
       & > a {
         &::before {
           content: '#';
@@ -159,7 +160,7 @@
     & img {
       max-height: 450px;
       max-width: 600px;
-      @apply mx-auto my-6 rounded;
+      @apply w-auto mx-auto my-6 rounded;
     }
     & ol > li,
     & ul > li {
@@ -210,11 +211,6 @@
     }
     .subtitle {
       @apply text-3xl;
-    }
-    .nuxt-content {
-      & ul {
-        @apply ml-0;
-      }
     }
 
     .banner-text-con {
