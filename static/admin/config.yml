@@ -12,8 +12,8 @@ public_folder: /img
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
-  - label: 'Site settings',
-    name: 'site'
+  - name: 'site'
+    label: 'Site settings'
     files:
       - label: 'Info',
         name: 'info'
