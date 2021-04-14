@@ -19,7 +19,7 @@ collections:
         name: 'info'
         file: 'content/site/info.json'
         format: 'json'
-        editor:
+         editor:
           preview: false
         fields:
           - { label: Site Name, name: sitename, widget: string, hint: 'This is used for the site title' }
@@ -43,7 +43,7 @@ collections:
     format: 'frontmatter'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }

@@ -1,6 +1,6 @@
 <template>
 
-  <header class="header-main-con sm:flex sm:justify-between sm:items-center">
+  <header class="z-50 header-main-con sm:flex sm:justify-between sm:items-center">
     <div class="header-con">
 
       <div class="px-2 py-2 sm:py-1">

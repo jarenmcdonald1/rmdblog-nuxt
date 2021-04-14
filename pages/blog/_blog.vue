@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section v-if="post">
+    <section v-if="post" class="mt-16">
       <nav class="mb-8" aria-label="go back">
         <router-back class="block" />
       </nav>

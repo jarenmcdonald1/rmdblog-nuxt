@@ -30,7 +30,7 @@
               <h6
                 v-if="post.createdAt"
                 class="leading-tight font-normal text-sm"
-              >{{ formatDate(post.createdAt) }}</h6>
+              >{{ formatDate(post.date) }}</h6>
               <p class="pb-6 leading-tight">{{ post.description }}</p>
               <nuxt-link :to="`${postType}/${post.slug}`" class="post-btn">Read more</nuxt-link>
               </div>
