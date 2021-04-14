@@ -25,9 +25,7 @@
           v-if="post.createdAt"
           class="inline-block py-1 px-2 my-2 bg-gray text-white text-sm font-medium rounded-sm whitespace-no-wrap"
         >{{ formatDate(post.createdAt) }}</h5>
-        <h1 class="">{{ post.title }}</h1>
-        <p class="mt-1 mb-4 text-primary-600 dark:text-primary-400">{{ post.description }}</p>
-        <nuxt-content :document="post" />
+        <nuxt-content class="article-body" :document="post" />
       </article>
 
       <nav class="mb-8" aria-label="go back">

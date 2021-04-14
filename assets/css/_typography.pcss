@@ -139,6 +139,9 @@
         }
       }
     }
+    & hr {
+      @apply my-8;
+    }
     & p {
       & + h1,
       & + h2,
@@ -154,7 +157,9 @@
         font-bold;
     }
     & img {
-      @apply mx-auto my-4 rounded;
+      max-height: 450px;
+      max-width: 600px;
+      @apply mx-auto my-6 rounded;
     }
     & ol > li,
     & ul > li {
@@ -245,6 +250,12 @@
 
     p {
       @apply leading-relaxed;
+    }
+
+    .nuxt-content {
+      & img {
+        @apply my-10;
+      }
     }
 
     .banner-text-con {
