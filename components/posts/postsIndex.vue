@@ -25,26 +25,30 @@
         <template v-else>
           <div class="post-con">
             <div class="post-text-con">
+              <div class="post-text">
               <h3 class="card-title">{{ post.title }}</h3>
               <h6
                 v-if="post.createdAt"
-                class="text-sm self-start inline-block mt-0 py-1 px-2 bg-gray-400 dark:bg-pink-600 text-gray-700 dark:text-gray-200 text-base font-normal rounded whitespace-no-wrap"
+                class="leading-tight font-normal text-sm"
               >{{ formatDate(post.createdAt) }}</h6>
-              <p class="mt-2">{{ post.description }}</p>
+              <p class="pb-6 leading-tight">{{ post.description }}</p>
+              <nuxt-link :to="`${postType}/${post.slug}`" class="post-btn">Read more</nuxt-link>
+              </div>
             </div>
-          </div>
-          <div v-if="post.cover" class="post-img-con">
-            <nuxt-img
-            v-if="post.cover"
-            :src="post.cover" 
-            class="post-img" 
-            />
+            <div v-if="post.cover" class="post-img-con">
+              <nuxt-img
+                v-if="post.cover"
+                :src="post.cover" 
+                class="post-img"
+                loading="lazy" 
+              />
+            </div>
           </div>
         </template>
       </nuxt-link>
     </div>
   </div>
-  
+
   <div v-else-if="loading" class="cards">
     <div v-for="placeholder in placeholderClasses" :key="placeholder.id" class="card">
       <content-placeholders :rounded="true" :class="placeholder">
