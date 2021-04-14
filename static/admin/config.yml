@@ -15,8 +15,8 @@ collections:
   - name: 'site'
     label: 'Site settings'
     files:
-      - label: 'Info',
-        name: 'info'
+      - name: 'info'
+        label: 'Info'
         file: 'content/site/info.json'
         format: 'json'
         editor:
@@ -48,7 +48,14 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Cover Image', name: 'cover', widget: 'image', hint: 'Images sized 1200px x 800px work best.', required: false, allow_multiple: false }
+      - {
+          label: 'Cover Image',
+          name: 'cover',
+          widget: 'image',
+          hint: 'Images sized 1200px x 800px work best.',
+          required: false,
+          allow_multiple: false,
+        }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
       - {
           label: 'Gallery',
