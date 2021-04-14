@@ -1,9 +1,24 @@
 <template>
   <main>
-    <section v-if="post" class="mt-16">
-      <nav class="mb-8" aria-label="go back">
-        <router-back class="block" />
-      </nav>
+    <section v-if="post" class="mt-0">
+
+      <div class="blog-banner-con">
+        <div class="banner-img-con">
+          <nuxt-img 
+            v-if="post.cover"
+            class="banner-img" 
+            :src="post.cover"
+            loading="lazy"
+            fit="cover"
+          />
+        </div>
+        <div class="banner-text-con">
+          <div class="blog-banner-text">
+            <h2>{{ post.title }}</h2>
+            <h5>{{ post.description }}</h5>
+          </div>
+        </div>
+      </div>
 
       <article>
         <h5
@@ -14,6 +29,10 @@
         <p class="mt-1 mb-4 text-primary-600 dark:text-primary-400">{{ post.description }}</p>
         <nuxt-content :document="post" />
       </article>
+
+      <nav class="mb-8" aria-label="go back">
+        <router-back class="block" />
+      </nav>
     </section>
   </main>
 </template>
