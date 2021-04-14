@@ -11,23 +11,17 @@ Hey Everyone!
 Welcome to my blog!
 I'm so excited you're here.
 
-
-
 ![Smiling](/img/img_3961.jpg)
-
-
 
 My name is Rachel McDonald.
 
 I am a Certified Nutritional Practitioner (CNP), Professional Dancer, a Dance Instructor, and Choreographer. 
 
-
-
 For as long as I can remember I have been interested in all things health and wellness. I was really lucky growing up with my three siblings. My mom has passed down a deep passion for keeping us all healthy (which by the way - was no easy feat). We were the kids that went to school with Chlorophyll water, or swamp water, as the kids used to call it. I can say I didn't realize how much of an impact this had made on me at the time, and how it would later impact the rest of my life.
 
 
 
----
+- - -
 
 
 
@@ -57,17 +51,13 @@ From there my passion for nutrition took the centre stage. I decided to attend T
 
 ![grad photo](/img/img_4103.jpg)
 
-
-
 - - -
-
-
 
 In more recent years, a deep passion for travel has blossomed inside me. 
 
-There was a time where travel did not feel like a priority for me, but in recent years I was able to travel to Mexico, and Hawaii. Both of these trips proved to be far more eye opening than I could've ever imagined. 
+There was a time where travel did not feel like a priority for me, but in recent years I was able to travel to Mexico, and Hawaii. Both of these trips proved to be far more eye opening than I could've ever imagined.
 
-
+ 
 
 - - -
 
@@ -90,9 +80,6 @@ Enriching yourself in culture, and learning about these countries' histories mak
 Plus who doesn't love some serious heat?!
 
 I know I certainly do! I could definitely see myself taking some time and living in either of these places for a while.
-
-
-
 
 
 
