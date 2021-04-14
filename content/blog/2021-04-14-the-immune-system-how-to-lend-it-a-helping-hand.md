@@ -1,7 +1,8 @@
 ---
-title: FRESH PEACH SMOOTHIE RECIPE
-date: 2020-08-10T04:22:23.400Z
-description: Peaches are in season and so is this smoothie!
-cover: /img/img_6473.jpg
+title: THE IMMUNE SYSTEM & HOW TO LEND IT A HELPING HAND
+date: 2020-07-27T04:22:23.400Z
+description: We all need strong immune systems, here's how the immune system
+  works and some small practices that can make all the difference!
+cover: /img/immunityheader.webp
 ---
 Raise your hand if you love peaches...
