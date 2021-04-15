@@ -261,8 +261,9 @@ export default {
 @screen sm {
   .light-mode {
     & .nav-links {
+      @apply px-0 py-1 mx-4 border-b-2 border-transparent text-gray-600 font-normal rounded-none;
       &:hover {
-        @apply bg-pink-500 text-white;
+        @apply bg-transparent border-pink-500 text-pink-600;
       }
     }
 
