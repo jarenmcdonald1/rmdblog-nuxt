@@ -39,7 +39,7 @@ export default {
 <style lang="postcss" scoped>
 
 .footer-main-con {
-  @apply mt-6 w-full py-6 px-3 bg-pink-700;
+  @apply mt-0 w-full py-6 px-3 bg-pink-700;
 }
 
 .footer-nav-con {

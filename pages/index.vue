@@ -6,7 +6,7 @@
       <h2 class="subtitle text-center">Boilerplate</h2>
     </section>
 
-    <section class="banner-con mb-10 sm:mb-20 md:mb-40">
+    <section class="banner-con">
       <nuxt-img class="banner-img" src="/img/rachel-texas.jpg" alt="My visit to Texas" />
       <div class="banner-text-con">
         <div class="banner-text">
@@ -18,82 +18,111 @@
       </div>
     </section>
 
+    <section id="aboutMe" class="infoCard-con about-con">
+
+        <div class="infoCard-img-con">
+          <nuxt-img class="infoCard-img" src="/img/profile-pic.jpg" alt="what a long sweet trip its been" loading="lazy" fit="cover" />
+        </div>
+
+        <div class="infoCard-text-con">
+          <div class="infoCard-text">
+            <h3>Hi, I'm Rachel (CNP, Hons)</h3>
+            <h4>I'm a Holistic Nutritionist, Professional Dancer, and Instructor/Choreographer</h4>
+            <p>My whole life I have been interested in health and wellness. The passion was handed down from my mom who would send me to school with Chlorophyll water (thanks, mom!). While I was completing my Professional Intense Dance Training program I began to experience digestive issues. I would curl up into a little ball with intense abdominal pain! With no clear answer, I tried to eliminate some known allergens. I noticed an immediate improvement in heightened energy levels and stronger body. This allowed me to push my body technically and physically which took my performance to the next level.</p>
+            <p>From there my passion for nutrition took the centre stage. I decided to attend The Institute of Holistic Nutrition where I would deep dive into all things health-related. I graduated and gained my Certified Nutritional Practitioner Certification (CNP, Hons.)</p>
+          </div>
+        </div>
+
+    </section>
+
     <div class="body-wrap">
 
-    <section id="whatIs" class="infoCard-con">
+      <section id="whatIs" class="infoCard-con">
 
-      <div class="infoCard-img-con">
-        <nuxt-img class="infoCard-img" src="/img/three-breads.jpg" alt="three healthy breads" loading="lazy" fit="cover" />
-      </div>
-
-      <div class="infoCard-text-con">
-        <div class="infoCard-text">
-          <h3>What is RMD Holistics?</h3>
-          <p>RMD Holistics focuses on a complete approach to health and wellness. Our Holistic approach assess issues by digging down to the root of the problem to heal what is underneath the surface.</p>
-          <p>RMD Holistics is designed to educate people, families, and a special focus on athletes and dancers. I have the experience of the conflict the body feels being pushed without the nutrition your individual body needs and the painful ways the body reacts. The difference between distress and healthy nutrition is optimal energy and strength.</p>
-          <p>Combining the demands and effects that dance training has on young dancers with an interactive nutrition workshop will provide dancers, parents and studios with a strong foundation for optimal training and performance.</p>
-          <p>Learn how to promote overall health and prevent disease!</p>
+        <div class="infoCard-img-con">
+          <nuxt-img class="infoCard-img" src="/img/three-breads.jpg" alt="three healthy breads" loading="lazy" fit="cover" />
         </div>
-      </div>
 
-    </section>
-
-    <section id="whoWork" class="infoCard-con reversed">
-
-      <div class="infoCard-img-con">
-        <nuxt-img class="infoCard-img" src="/img/grain-bowl.jpg" alt="breakfast grain bowl" loading="lazy" fit="cover" />
-      </div>
-
-      <div class="infoCard-text-con">
-        <div class="infoCard-text">
-          <h3>Who we work with</h3>
-          <ul>
-            <li>Dance Studios</li>
-            <li>Dance Companies</li>
-            <li>Athletes</li>
-            <li>Individual Dancers</li>
-            <li>Families & Individuals</li>
-            <li>Everyone</li>
-          </ul>
+        <div class="infoCard-text-con">
+          <div class="infoCard-text">
+            <h3>What is RMD Holistics?</h3>
+            <p>RMD Holistics focuses on a complete approach to health and wellness. Our Holistic approach assess issues by digging down to the root of the problem to heal what is underneath the surface.</p>
+            <p>RMD Holistics is designed to educate people, families, and a special focus on athletes and dancers. I have the experience of the conflict the body feels being pushed without the nutrition your individual body needs and the painful ways the body reacts. The difference between distress and healthy nutrition is optimal energy and strength.</p>
+            <p>Combining the demands and effects that dance training has on young dancers with an interactive nutrition workshop will provide dancers, parents and studios with a strong foundation for optimal training and performance.</p>
+            <p>Learn how to promote overall health and prevent disease!</p>
+          </div>
         </div>
-      </div>
 
-    </section>
+      </section>
 
-    <section id="whatDoes" class="infoCard-con">
+      <section id="whoWork" class="infoCard-con reversed">
 
-      <div class="infoCard-img-con">
-        <nuxt-img class="infoCard-img" src="/img/sliced-fruit.jpg" alt="colourful sliced fruits" loading="lazy" fit="cover" />
-      </div>
-
-      <div class="infoCard-text-con">
-        <div class="infoCard-text">
-          <h3>What does a Holistic Nutritionist do?</h3>
-          <p>A Holistic Nutritionist works with dancers, athletes, individuals, families, groups, and everyone on ways to improve nutrition, energy, strength and promote health and wellness and prevent disease.</p>
-          <p>This is achieved by offering the following services:</p>
-          <ul>
-            <li>Diet and Lifestyle Evaluation</li>
-            <li>Teach Healthy Eating</li>
-            <li>Grocery Store Shopping Tours</li>
-            <li>Family Meal Planning</li>
-            <li>Suggestions for Improving Wellness</li>
-            <li>Suggestions for Managing Stress</li>
-            <li>Meal Plans for improved mood, weight and strength</li>
-            <li>Nutritional Speaker and Workshop Services</li>
-            <li>Personal Client Consultations</li>
-            <li>Advise Clients on Supplementation to aid increased wellness</li>
-          </ul>
+        <div class="infoCard-img-con">
+          <nuxt-img class="infoCard-img" src="/img/grain-bowl.jpg" alt="breakfast grain bowl" loading="lazy" fit="cover" />
         </div>
-      </div>
 
-    </section>
+        <div class="infoCard-text-con">
+          <div class="infoCard-text">
+            <h3>Who we work with</h3>
+            <ul>
+              <li>Dance Studios</li>
+              <li>Dance Companies</li>
+              <li>Athletes</li>
+              <li>Individual Dancers</li>
+              <li>Families & Individuals</li>
+              <li>Everyone</li>
+            </ul>
+          </div>
+        </div>
 
-    <section class="mt-8" id="indexBlogCon">
-      <h3 class="mb-4 text-4xl font-serif leading-8 text-pink-500 dark:text-pink-500 md:text-5xl md:leading-tight">Latest blog posts:</h3>
-      <posts post-type="blog" :amount="3" />
-    </section>
+      </section>
+
+      <section id="whatDoes" class="infoCard-con">
+
+        <div class="infoCard-img-con">
+          <nuxt-img class="infoCard-img" src="/img/sliced-fruit.jpg" alt="colourful sliced fruits" loading="lazy" fit="cover" />
+        </div>
+
+        <div class="infoCard-text-con">
+          <div class="infoCard-text">
+            <h3>What does a Holistic Nutritionist do?</h3>
+            <p>A Holistic Nutritionist works with dancers, athletes, individuals, families, groups, and everyone on ways to improve nutrition, energy, strength and promote health and wellness and prevent disease.</p>
+            <p>This is achieved by offering the following services:</p>
+            <ul>
+              <li>Diet and Lifestyle Evaluation</li>
+              <li>Teach Healthy Eating</li>
+              <li>Grocery Store Shopping Tours</li>
+              <li>Family Meal Planning</li>
+              <li>Suggestions for Improving Wellness</li>
+              <li>Suggestions for Managing Stress</li>
+              <li>Meal Plans for improved mood, weight and strength</li>
+              <li>Nutritional Speaker and Workshop Services</li>
+              <li>Personal Client Consultations</li>
+              <li>Advise Clients on Supplementation to aid increased wellness</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="mt-8" id="indexBlogCon">
+        <h3 class="mb-4 text-4xl font-serif leading-8 text-pink-500 dark:text-pink-500 md:text-5xl md:leading-tight">Latest blog posts:</h3>
+        <posts post-type="blog" :amount="3" />
+      </section>
 
     </div>
+
+    <section class="index-sub-con">
+      <div class="sub-text-con">
+        <div class="sub-text">
+          <h4>Subscribe to my Newsletter!</h4>
+        </div>
+      </div>
+      <div class="index-sub hidden">
+        <div class="sub-input"></div>
+        <div class="sub-submit"></div>
+      </div>
+    </section>
 
   </main>
 </template>
