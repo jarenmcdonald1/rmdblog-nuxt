@@ -112,7 +112,7 @@
 
     </div>
 
-    <section class="index-sub-con">
+    <section class="index-sub-con hidden">
       <div class="sub-text-con">
         <div class="sub-text">
           <h4>Subscribe to my Newsletter!</h4>

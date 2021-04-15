@@ -31,6 +31,7 @@
                 :src="post.cover" 
                 class="post-img"
                 loading="lazy" 
+                object="cover"
               />
             </div>
 
@@ -81,7 +82,7 @@
       sortBy: { // ? https://content.nuxtjs.org/fetching#sortbykey-direction
         type: Object,
         default: () => ({
-          key: 'slug',
+          key: 'date',
           direction: 'desc' // you probably want 'asc' here
         }),
         validator: (obj) => typeof obj.key === 'string' && typeof obj.direction === 'string',

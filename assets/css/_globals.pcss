@@ -116,7 +116,36 @@ body {
   }
 }
 
+.contact-con {
+  max-width: 600px;
+  @apply bg-pink-700 py-3 px-4 rounded-lg shadow-lg;
+
+  & h3 {
+    @apply font-serif text-4xl text-pink-200;
+  }
+
+  & .contact-btns-con {
+    @apply px-2 flex flex-col justify-center items-center;
+  }
+
+  & .btns {
+    @apply py-2 px-3 my-2 mx-2 bg-transparent border-2 border-gray-300 rounded-full transition duration-200 ease-in-out;
+
+    &:hover {
+      @apply bg-gray-200 border-gray-300 text-pink-700;
+    }
+  }
+}
+
 @screen sm {
+  .contact-con {
+    & h3 {
+      @apply text-6xl;
+    }
+    & .contact-btns-con {
+      @apply flex-row justify-around;
+    }
+  }
   .infoCard-con {
     @apply mb-24;
 
@@ -228,6 +257,22 @@ body {
 }
 
 .light-mode {
+  & .contact-con {
+    @apply bg-gray-200;
+
+    & h3 {
+      @apply text-pink-600;
+    }
+
+    & .btns {
+      @apply bg-transparent border border-pink-600 text-pink-600;
+
+      &:hover {
+        @apply bg-pink-600 text-white;
+      }
+    }
+  }
+
   & .infoCard-con {
     & .infoCard-text {
       @apply bg-gray-100;
