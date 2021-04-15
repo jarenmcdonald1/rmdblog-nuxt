@@ -6,7 +6,6 @@
       <div class="px-2 py-2 sm:py-1">
         <nuxt-link class="logo-link" to="/">
           <span class="sr-only">RMD Holistics</span>
-            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In  -->
             <svg class="logo-svg fill-current h-10 w-auto" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 154.44 75.17" style="overflow:visible;enable-background:new 0 0 154.44 75.17;"
               xml:space="preserve">
@@ -126,7 +125,7 @@
       </div>
 
       <div class="sm:hidden">
-        <button @click="isOpen = !isOpen" class="nav-btn" type="button">
+        <button @click="isOpen = !isOpen" class="nav-btn" type="button" aria-label="toggle mobile nav button">
           <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
             <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
               <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>

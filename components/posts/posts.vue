@@ -32,6 +32,7 @@
                 class="post-img"
                 loading="lazy" 
                 object="cover"
+                :alt="post.title"
               />
             </div>
 

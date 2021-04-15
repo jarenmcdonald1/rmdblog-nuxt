@@ -8,6 +8,7 @@
       <nuxt-link
         :to="`${postType}/${post.slug}`"
         class="post-link post--clickable"
+        :title="post.title"
       >
         <template v-if="postType === 'projects'">
           <span class="flex-1">
@@ -40,7 +41,8 @@
                 v-if="post.cover"
                 :src="post.cover" 
                 class="post-img"
-                loading="lazy" 
+                loading="lazy"
+                :alt="post.title"
               />
             </div>
           </div>
