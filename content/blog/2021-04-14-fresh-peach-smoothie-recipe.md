@@ -36,7 +36,7 @@ For me, I wanted to create a fun way to enjoy the sweetness in the morning witho
 
 
 
-![](/img/img_0452.jpg)
+![blender from above](/img/img_0452.jpg)
 
 
 - - -
@@ -107,21 +107,21 @@ I've said it before and I'll say it again, breakfast isn't my favourite meal, bu
 - - -
 
 
-\* (*step 1)*
+##### Step 1
 
 ![sliced](/img/img_2970.jpg)
 
 - - -
 
 
-\**(step 2)*
+##### Step 2
 
 ![all in blender](/img/img_1854.jpg)
 
 - - -
 
 
-\**(step 3)*
+##### Step 3
 
 ![add in](/img/img_2013.jpg)
 
