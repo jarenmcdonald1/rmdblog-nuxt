@@ -46,10 +46,10 @@ export default {
   @apply flex flex-col items-center justify-center;
 
   & .nav-links {
-    @apply px-3 py-2 rounded-lg mb-3 bg-transparent text-center text-lg text-pink-300;
+    @apply px-3 py-2 rounded-lg mb-3 bg-transparent text-center text-lg text-pink-200;
 
     &:hover {
-      @apply text-pink-100 bg-pink-600;
+      @apply text-gray-100 bg-pink-600;
     }
     &:last-child {
       @apply mb-0;
@@ -58,13 +58,13 @@ export default {
 }
 
 .copyright-con {
-  @apply w-full py-3 bg-pink-800;
+  @apply w-full py-5 bg-pink-800;
 
   & .copyright-text {
-    @apply text-sm text-center text-pink-600;
+    @apply text-sm text-center text-pink-500;
   }
   & .copyright-link {
-    @apply fill-current text-pink-600 no-underline;
+    @apply fill-current text-pink-500 no-underline;
   }
 }
 
