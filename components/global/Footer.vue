@@ -5,8 +5,8 @@
     <footer class="footer-main-con">
 
       <div class="footer-nav-con">
-        <nuxt-link class="nav-links" to="#">About</nuxt-link>
-        <nuxt-link class="nav-links" to="#">Services</nuxt-link>
+        <nuxt-link class="nav-links" to="/#aboutMe">About</nuxt-link>
+        <nuxt-link class="nav-links" to="/#whatIs">Services</nuxt-link>
       <nuxt-link class="nav-links" to="/blog">Blog</nuxt-link>
         <nuxt-link class="nav-links" to="#">Contact</nuxt-link>
       </div>
