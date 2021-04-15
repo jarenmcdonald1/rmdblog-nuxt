@@ -61,7 +61,7 @@ export default {
   @apply w-full py-5 bg-pink-800;
 
   & .copyright-text {
-    @apply text-sm text-center text-pink-400;
+    @apply text-center text-pink-400;
   }
   & .copyright-link {
     @apply fill-current text-pink-400 no-underline;
