@@ -18,7 +18,7 @@
     </footer>
 
     <div class="copyright-con">
-      <p class="copyright-text">&copy; <span class="copyright-year">{{new Date().getFullYear()}}</span> <a class="copyright-link" href="https://jaren.ca" title="Visit Jaren's Site">Jaren McDonald</a></p>  
+      <p class="copyright-text">&copy; {{new Date().getFullYear()}} <a class="copyright-link" href="https://jaren.ca" title="Visit Jaren's Site">Jaren McDonald</a></p>  
     </div>  
 
   </div>
@@ -61,10 +61,10 @@ export default {
   @apply w-full py-5 bg-pink-800;
 
   & .copyright-text {
-    @apply text-sm text-center text-pink-500;
+    @apply text-sm text-center text-pink-400;
   }
   & .copyright-link {
-    @apply fill-current text-pink-500 no-underline;
+    @apply fill-current text-pink-400 no-underline;
   }
 }
 
