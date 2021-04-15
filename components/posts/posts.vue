@@ -7,7 +7,7 @@
     >
       <nuxt-link
         :to="`${postType}/${post.slug}`"
-        class="card-link card--clickable"
+        class="card-link card--clickable w-full"
       >
         <template v-if="postType === 'projects'">
           <span class="flex-1">
