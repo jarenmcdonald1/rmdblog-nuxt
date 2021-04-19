@@ -33,7 +33,7 @@
             @apply rounded-full px-4 py-2 border border-gray-200;
 
             &:hover {
-              @apply bg-gray-100 border-gray-100 text-pink-700;
+              @apply bg-gray-100 border-gray-100 text-main-700;
             }
           }
         }
@@ -41,10 +41,10 @@
 
       & .card--clickable {
         & .card-con {
-          @apply w-full px-0 pt-0 pb-6 bg-pink-700 rounded-lg shadow border border-transparent transition duration-200 ease-in-out;
+          @apply w-full px-0 pt-0 pb-6 bg-main-700 rounded-lg shadow border border-transparent transition duration-200 ease-in-out;
 
           &:hover {
-            @apply bg-pink-600 text-white shadow-lg;
+            @apply bg-main-600 text-white shadow-lg;
 
             & .post-img {
               @apply opacity-75;
@@ -63,7 +63,7 @@
     @apply block w-full duration-100;
   }
   .card-title {
-    @apply font-medium font-serif text-pink-200 text-2xl;
+    @apply font-medium font-serif text-main-200 text-2xl;
   }
 
   .cover-image {
@@ -85,14 +85,14 @@
           &:hover {
             @apply bg-gray-300;
             & .card-title {
-              @apply text-pink-400;
+              @apply text-main-400;
             }
           }
         }
       }
     }
     & .card-title {
-      @apply text-pink-600 text-2xl;
+      @apply text-main-600 text-2xl;
     }
   }
 
@@ -205,10 +205,10 @@
         & .card-text-con {
           & .card-text {
             & .post-btn {
-              @apply text-pink-700 border-2 border-pink-700;
+              @apply text-main-700 border-2 border-main-700;
 
               &:hover {
-                @apply text-gray-200 bg-pink-700;
+                @apply text-gray-200 bg-main-700;
               }
             }
           }
@@ -221,7 +221,7 @@
               @apply bg-gray-200 shadow-lg;
 
               & .card-title {
-                @apply text-pink-700;
+                @apply text-main-700;
               }
             }
           }
@@ -239,12 +239,12 @@
   }
 
   .post-con {
-    @apply grid grid-cols-1 grid-rows-1 bg-pink-700 rounded-lg overflow-hidden;
+    @apply grid grid-cols-1 grid-rows-1 bg-main-700 rounded-lg overflow-hidden;
 
     & .post-text-con {
       grid-row: 1/2;
       grid-column: 1/2;
-      background-color: rgba(141, 65, 145, 0.35);
+      background-color: rgba(33, 127, 102, 0.05);
       @apply z-20 px-4 py-8 flex justify-center items-center transition duration-200 ease-in-out;
     }
 
@@ -270,7 +270,7 @@
       @apply rounded-full px-4 py-2 border-2 border-gray-200;
 
       &:hover {
-        @apply bg-gray-100 text-pink-700;
+        @apply bg-gray-100 text-main-700;
       }
     }
   }
@@ -278,7 +278,7 @@
   .post--clickable {
     &:hover {
       & .post-text-con {
-        background-color: rgba(141, 65, 145, 0.85);
+        background-color: rgba(33, 127, 102, 0.75);
       }
     }
   }
@@ -305,7 +305,7 @@
       @apply bg-gray-200;
 
       & .post-text-con {
-        background-color: rgba(141, 65, 145, 0.25);
+        background-color: rgba(33, 127, 102, 0.25);
       }
     }
 
@@ -314,7 +314,7 @@
         @apply text-gray-100 border-gray-100;
 
         &:hover {
-          @apply bg-white text-pink-700;
+          @apply bg-white text-main-700;
         }
       }
       & p,
@@ -326,7 +326,7 @@
     & .post--clickable {
       &:hover {
         & .post-text-con {
-          background-color: rgba(141, 65, 145, 0.75);
+          background-color: rgba(33, 127, 102, 0.75);
         }
         & .post-text {
           & p,
@@ -340,7 +340,7 @@
   }
 
   .infoCard-con.about-con {
-    @apply bg-pink-600 py-8 px-4;
+    @apply bg-main-600 py-8 px-4;
   }
 
   @screen md {

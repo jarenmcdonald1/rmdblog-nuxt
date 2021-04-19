@@ -13,7 +13,7 @@ module.exports = {
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
         serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
-        accent: ['Permanent Marker', ...defaultTheme.fontFamily.serif],
+        accent: ['Dancing Script', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         gray: {
@@ -39,16 +39,17 @@ module.exports = {
           '800': 'var(--color-primary-800)', // #1C263B
           '900': 'var(--color-primary-900)', // #0D131E
         },
-        teal: {
-          '100': 'var(--color-teal-100)',
-          '200': 'var(--color-teal-200)',
-          '300': 'var(--color-teal-300)',
-          '400': 'var(--color-teal-400)',
-          '500': 'var(--color-teal-500)',
-          '600': 'var(--color-teal-600)',
-          '700': 'var(--color-teal-700)',
-          '700': 'var(--color-teal-800)',
-          default: 'var(--color-teal-500)',
+        main: {
+          '100': 'var(--color-main-100)',
+          '200': 'var(--color-main-200)',
+          '300': 'var(--color-main-300)',
+          '400': 'var(--color-main-400)',
+          '500': 'var(--color-main-500)',
+          '600': 'var(--color-main-600)',
+          '700': 'var(--color-main-700)',
+          '800': 'var(--color-main-800)',
+          '900': 'var(--color-main-900)',
+          default: 'var(--color-main-500)',
         },
         pink: {
           '100': 'var(--color-pink-100)',

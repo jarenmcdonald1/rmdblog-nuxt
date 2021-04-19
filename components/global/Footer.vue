@@ -39,17 +39,17 @@ export default {
 <style lang="postcss" scoped>
 
 .footer-main-con {
-  @apply mt-0 w-full py-6 px-3 bg-pink-700;
+  @apply mt-0 w-full py-6 px-3 bg-main-700;
 }
 
 .footer-nav-con {
   @apply flex flex-col items-center justify-center;
 
   & .nav-links {
-    @apply px-3 py-2 rounded-lg mb-3 bg-transparent text-center text-lg text-pink-200;
+    @apply px-3 py-2 rounded-lg mb-3 bg-transparent text-center text-lg text-main-200;
 
     &:hover {
-      @apply text-gray-100 bg-pink-600;
+      @apply text-gray-100 bg-main-600;
     }
     &:last-child {
       @apply mb-0;
@@ -58,13 +58,13 @@ export default {
 }
 
 .copyright-con {
-  @apply w-full py-5 bg-pink-800;
+  @apply w-full py-5 bg-main-800;
 
   & .copyright-text {
-    @apply text-center text-pink-400;
+    @apply text-center text-main-400;
   }
   & .copyright-link {
-    @apply fill-current text-pink-400 no-underline;
+    @apply fill-current text-main-400 no-underline;
   }
 }
 
