@@ -6,7 +6,7 @@
       class="posts-con"
     >
       <nuxt-link
-        :to="`${postType}/${post.slug}`"
+        :to="`/${post.slug}`"
         class="post-link post--clickable"
         :title="post.title"
       >
@@ -33,7 +33,7 @@
                 class="leading-tight font-normal text-sm"
               >{{ formatDate(post.date) }}</h6>
               <p class="pb-6 leading-tight">{{ post.description }}</p>
-              <nuxt-link :to="`${postType}/${post.slug}`" class="post-btn" :title="`Read more about ${post.title}`">Read the full blog here!</nuxt-link>
+              <nuxt-link :to="`/${post.slug}`" class="post-btn" :title="`Read more about ${post.title}`">Read the full blog here!</nuxt-link>
               </div>
             </div>
             <div v-if="post.cover" class="post-img-con">
