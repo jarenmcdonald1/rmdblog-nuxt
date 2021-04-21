@@ -1,7 +1,7 @@
 {
   "name": "rmdholistics",
   "version": "2.0.0",
-  "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
+  "description": "RMD Holistics focuses on a complete approach to health and wellness.",
   "author": "Jaren McDonald <jaren.mcd@gmail.com> (https://jaren.ca)",
   "scripts": {
     "dev": "nuxt",

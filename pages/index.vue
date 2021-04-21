@@ -1,11 +1,6 @@
 <template>
   <main>
 
-    <section class="hidden self-center flex flex-col flex-1 items-center justify-center">
-      <h1 class="title text-center font-serif">Nuxt — Tailwind — Netlify CMS</h1>
-      <h2 class="subtitle text-center">Boilerplate</h2>
-    </section>
-
     <section class="banner-con">
       <nuxt-img class="banner-img" src="/img/rachel-texas.jpg" alt="My visit to Texas" />
       <div class="banner-text-con">
