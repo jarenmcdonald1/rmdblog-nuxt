@@ -48,7 +48,7 @@ export default {
 <style lang="postcss" scoped>
 
 .header-main-con {
-  background-color: rgba(33,127,102,0.95);
+  background-color: rgba(144,210,123,0.95);
   @apply fixed top-0 w-full py-2 px-3;
 }
 
