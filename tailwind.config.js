@@ -11,7 +11,7 @@ module.exports = {
     darkSelector: '.dark-mode',
     extend: {
       fontFamily: {
-        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+        sans: ['Raleway', ...defaultTheme.fontFamily.sans],
         serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
         accent: ['Dancing Script', ...defaultTheme.fontFamily.serif],
       },
