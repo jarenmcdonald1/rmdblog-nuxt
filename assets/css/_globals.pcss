@@ -36,48 +36,6 @@ body {
   }
 }
 
-.infoCard-con {
-  grid-template-rows: minmax(150px, 250px) 40px auto;
-  @apply mb-12 grid text-gray-200;
-
-  & .infoCard-img-con {
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-  & .infoCard-img {
-    @apply h-full w-full object-cover rounded;
-  }
-
-  & .infoCard-text-con {
-    grid-column: 1/2;
-    grid-row: 2/4;
-    @apply px-2;
-  }
-  & .infoCard-text {
-    max-width: 600px;
-    @apply bg-main-700 rounded-lg px-4 py-3 shadow-lg;
-
-    & h3 {
-      @apply mb-6 text-4xl;
-    }
-
-    & h1,
-    & h2,
-    & h3,
-    & h4 {
-      @apply font-serif text-main-100;
-    }
-
-    & p {
-      @apply font-light leading-tight;
-    }
-
-    & ul {
-      @apply pt-2 pl-6 font-light list-disc;
-    }
-  }
-}
-
 .blog-banner-con {
   @apply w-full h-screen grid grid-cols-1 grid-rows-1 justify-items-center items-center;
 
@@ -87,6 +45,7 @@ body {
     @apply w-full h-full;
 
     & .banner-img {
+      height: 100%;
       min-width: 100%;
       min-height: 100%;
       @apply w-full h-full object-cover object-center;
@@ -146,17 +105,6 @@ body {
       @apply flex-row justify-around;
     }
   }
-  .infoCard-con {
-    @apply mb-24;
-
-    & .infoCard-text-con {
-      @apply px-8;
-    }
-
-    & .infoCard-text {
-      @apply px-6 py-4 shadow-xl;
-    }
-  }
 
   .blog-banner-con {
     & .banner-text-con {
@@ -180,45 +128,6 @@ body {
     }
   }
 
-  .infoCard-con {
-    grid-template-rows: minmax(auto, 40px) repeat(2, minmax(auto, 1fr)) minmax(auto, 40px);
-    grid-template-columns: repeat(3, minmax(auto, 1fr));
-    @apply mb-40;
-
-    & .infoCard-img-con {
-      grid-row: 1/4;
-      grid-column: 1/3;
-    }
-    & .infoCard-img {
-      max-width: 650px;
-      max-height: 400px;
-    }
-    & .infoCard-text-con {
-      grid-row: 2/5;
-      grid-column: 2/4;
-      @apply px-0 justify-self-end self-end;
-    }
-    & .infoCard-text {
-      @apply px-6 py-4 shadow-2xl;
-
-      & h3 {
-        @apply text-5xl leading-tight;
-      }
-    }
-  }
-
-  .infoCard-con.reversed {
-    & .infoCard-img-con {
-      grid-row: 2/5;
-      grid-column: 2/4;
-    }
-    & .infoCard-text-con {
-      grid-row: 1/4;
-      grid-column: 1/3;
-      @apply justify-self-end self-start;
-    }
-  }
-
   .blog-banner-con {
     max-height: 650px;
     & .banner-text-con {
@@ -236,23 +145,7 @@ body {
 @screen lg {
   .banner-con {
     max-height: 800px;
-  }
-  .infoCard-con {
-    & .infoCard-img {
-      max-height: 500px;
-      max-width: 800px;
-      min-height: 100%;
-      min-width: 100%;
-    }
-    & .infoCard-text-con {
-      @apply justify-self-start;
-    }
-  }
-
-  .infoCard-con.reversed {
-    & .infoCard-text-con {
-      @apply justify-self-center;
-    }
+    height: 800px;
   }
 }
 
@@ -269,23 +162,6 @@ body {
 
       &:hover {
         @apply bg-main-600 text-white;
-      }
-    }
-  }
-
-  & .infoCard-con {
-    & .infoCard-text {
-      @apply bg-gray-100;
-
-      & ul {
-        @apply text-gray-800;
-      }
-
-      & h1,
-      & h2,
-      & h3,
-      & h4 {
-        @apply text-main-500;
       }
     }
   }

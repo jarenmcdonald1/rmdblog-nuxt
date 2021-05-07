@@ -2,7 +2,7 @@
   .cards-main-con {
     @apply w-full py-4 rounded-lg text-left;
     & .cards-con {
-      @apply w-full flex flex-col justify-between items-start mx-auto px-4 py-4 bg-transparent;
+      @apply w-full flex flex-col justify-between items-start mx-auto px-4 py-4;
 
       & .card-img-con {
         max-height: 300px;
@@ -27,7 +27,7 @@
           }
 
           & .card-title {
-            @apply uppercase mb-4 font-medium text-3xl leading-none;
+            @apply uppercase mb-4 font-semibold text-3xl leading-none;
           }
           & .post-btn {
             @apply rounded-full px-4 py-2 border border-gray-200;
@@ -41,10 +41,10 @@
 
       & .card--clickable {
         & .card-con {
-          @apply w-full px-0 pt-0 pb-6 bg-main-700 rounded-lg shadow border border-transparent transition duration-200 ease-in-out;
+          @apply w-full px-0 pt-0 pb-6 bg-main-600 rounded-lg shadow border-transparent transition duration-200 ease-in-out;
 
           &:hover {
-            @apply bg-main-400 text-white shadow-lg;
+            @apply bg-main-500 text-white shadow-lg;
 
             & .post-img {
               @apply opacity-75;
@@ -63,7 +63,7 @@
     @apply block w-full duration-100;
   }
   .card-title {
-    @apply font-medium font-serif text-main-200 text-2xl;
+    @apply font-medium font-serif text-main-100 text-2xl;
   }
 
   .cover-image {
@@ -244,7 +244,7 @@
     & .post-text-con {
       grid-row: 1/2;
       grid-column: 1/2;
-      background-color: rgba(33, 127, 102, 0.05);
+      background-color: RGBA(101, 112, 73, 0.25);
       @apply z-20 px-4 py-8 flex justify-center items-center transition duration-200 ease-in-out;
     }
 
@@ -278,7 +278,7 @@
   .post--clickable {
     &:hover {
       & .post-text-con {
-        background-color: rgba(33, 127, 102, 0.75);
+        background-color: RGBA(101, 112, 73, 0.75);
       }
     }
   }
@@ -303,10 +303,6 @@
   .light-mode {
     & .post-con {
       @apply bg-gray-200;
-
-      & .post-text-con {
-        background-color: rgba(33, 127, 102, 0.25);
-      }
     }
 
     & .post-text {
@@ -326,7 +322,7 @@
     & .post--clickable {
       &:hover {
         & .post-text-con {
-          background-color: rgba(33, 127, 102, 0.75);
+          background-color: rgba(101, 112, 73, 0.75);
         }
         & .post-text {
           & p,
@@ -339,11 +335,106 @@
     }
   }
 
+  .infoCard-con {
+    grid-template-rows: minmax(150px, 250px) 40px auto;
+    @apply mb-12 grid text-gray-200;
+
+    & .infoCard-img-con {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+    & .infoCard-img {
+      @apply h-full w-full object-cover rounded;
+    }
+
+    & .infoCard-text-con {
+      grid-column: 1/2;
+      grid-row: 2/4;
+      @apply px-2;
+    }
+    & .infoCard-text {
+      max-width: 600px;
+      @apply bg-main-700 rounded-lg px-4 py-3 shadow-lg;
+
+      & h3 {
+        @apply mb-6 text-4xl;
+      }
+
+      & h1,
+      & h2,
+      & h3,
+      & h4 {
+        @apply font-serif text-main-100;
+      }
+
+      & p {
+        @apply font-light leading-tight;
+      }
+
+      & ul {
+        @apply pt-2 pl-6 font-light list-disc;
+      }
+    }
+  }
+
   .infoCard-con.about-con {
     @apply bg-main-500 py-8 px-4;
   }
 
+  @screen sm {
+    .infoCard-con {
+      @apply mb-24;
+
+      & .infoCard-text-con {
+        @apply px-8;
+      }
+
+      & .infoCard-text {
+        @apply px-6 py-4 shadow-xl;
+      }
+    }
+  }
+
   @screen md {
+    .infoCard-con {
+      grid-template-rows: minmax(auto, 40px) repeat(2, minmax(auto, 1fr)) minmax(auto, 40px);
+      grid-template-columns: repeat(3, minmax(auto, 1fr));
+      @apply mb-40;
+
+      & .infoCard-img-con {
+        grid-row: 1/4;
+        grid-column: 1/3;
+      }
+      & .infoCard-img {
+        max-width: 650px;
+        max-height: 400px;
+      }
+      & .infoCard-text-con {
+        grid-row: 2/5;
+        grid-column: 2/4;
+        @apply px-0 justify-self-end self-end;
+      }
+      & .infoCard-text {
+        @apply px-6 py-4 shadow-2xl;
+
+        & h3 {
+          @apply text-5xl leading-tight;
+        }
+      }
+    }
+
+    .infoCard-con.reversed {
+      & .infoCard-img-con {
+        grid-row: 2/5;
+        grid-column: 2/4;
+      }
+      & .infoCard-text-con {
+        grid-row: 1/4;
+        grid-column: 1/3;
+        @apply justify-self-end self-start;
+      }
+    }
+
     .infoCard-con.about-con {
       grid-template-columns: repeat(7, minmax(auto, 1fr));
       @apply py-12 px-8;
@@ -367,23 +458,60 @@
   }
 
   @screen lg {
-    .infoCard-con.about-con {
-      grid-template-columns: repeat(7, minmax(auto, 1fr));
+    .infoCard-con {
+      & .infoCard-img {
+        max-height: 500px;
+        max-width: 800px;
+        min-height: 100%;
+        min-width: 100%;
+      }
+      & .infoCard-text-con {
+        @apply justify-self-start;
+      }
+    }
 
-      & .infoCard-img-con {
-        grid-row: 2/5;
-        grid-column: 4/8;
-        @apply justify-self-end self-start;
+    .infoCard-con.reversed {
+      & .infoCard-text-con {
+        @apply justify-self-center;
+      }
+    }
+  }
 
-        & .infoCard-img {
-          max-height: 600px;
-        }
+  .infoCard-con.about-con {
+    grid-template-columns: repeat(7, minmax(auto, 1fr));
+
+    & .infoCard-img-con {
+      grid-row: 2/5;
+      grid-column: 4/8;
+      @apply justify-self-end self-start;
+
+      & .infoCard-img {
+        max-height: 600px;
+      }
+    }
+
+    & .infoCard-text-con {
+      grid-row: 1/5;
+      grid-column: 1/6;
+      @apply justify-self-center self-center;
+    }
+  }
+}
+
+.light-mode {
+  & .infoCard-con {
+    & .infoCard-text {
+      @apply bg-gray-100;
+
+      & ul {
+        @apply text-gray-800;
       }
 
-      & .infoCard-text-con {
-        grid-row: 1/5;
-        grid-column: 1/6;
-        @apply justify-self-center self-center;
+      & h1,
+      & h2,
+      & h3,
+      & h4 {
+        @apply text-main-500;
       }
     }
   }

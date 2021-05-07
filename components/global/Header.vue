@@ -112,7 +112,7 @@ export default {
 
 <style lang="postcss" scoped>
 .header-main-con {
-  @apply fixed top-0 w-full py-2 px-3 bg-main-400;
+  @apply fixed top-0 w-full py-2 px-3 bg-main-500;
 }
 
 .logo-img {
@@ -180,29 +180,26 @@ export default {
   }
 
   & .logo-link {
-    @apply text-main-500;
+    @apply text-main-600;
 
     &:hover {
-      @apply text-main-800;
+      @apply text-main-300;
     }
   }
 
   & .nav-btn {
-    @apply text-gray-700;
+    @apply text-main-700 bg-transparent;
 
     &:hover {
-      @apply text-white bg-main-200;
-    }
-    &:focus {
-      @apply text-white bg-main-200;
+      @apply text-white bg-main-600;
     }
   }
 
   & .nav-links {
-    @apply text-main-600;
+    @apply text-main-700;
 
     &:hover {
-      @apply bg-main-200 text-white;
+      @apply bg-main-600 text-white;
     }
   }
 }
@@ -210,9 +207,9 @@ export default {
 @screen sm {
   .light-mode {
     & .nav-links {
-      @apply px-0 py-1 mx-4 border-b-2 border-transparent text-gray-600 font-normal rounded-none;
+      @apply px-0 py-1 mx-4 border-b-2 border-transparent text-main-700 font-normal rounded-none;
       &:hover {
-        @apply bg-transparent border-main-500 text-main-600;
+        @apply bg-transparent border-main-400 text-main-500;
       }
     }
   }

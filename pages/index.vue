@@ -166,7 +166,7 @@
 
       <section class="mt-8" id="indexBlogCon">
         <h3
-          class="mb-4 text-4xl font-serif uppercase leading-8 text-main-500 dark:text-main-200 md:text-5xl md:leading-tight"
+          class="mb-4 text-4xl font-serif uppercase leading-8 text-main-600 dark:text-main-800 md:text-5xl md:leading-tight"
         >
           Latest blog posts:
         </h3>

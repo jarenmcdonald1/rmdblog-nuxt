@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section v-if="post" class="mt-0">
+    <section v-if="post" class="mt-0 dark:bg-main-800">
 
       <div class="blog-banner-con">
         <div class="banner-img-con">
