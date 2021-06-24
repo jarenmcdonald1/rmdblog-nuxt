@@ -49,11 +49,11 @@ export default {
       {
         rel: 'preload',
         as: 'style',
-        href: 'https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Finger+Paint&family=Fredericka+the+Great&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Slab&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave&display=swap'
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Finger+Paint&family=Fredericka+the+Great&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Slab&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave&display=swap',
         media: 'print',
         onload: `this.media='all'`
       }
@@ -61,7 +61,7 @@ export default {
     noscript: [
       {
         innerHTML:
-          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Finger+Paint&family=Fredericka+the+Great&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave&display=swap">'
+          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Slab&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave&display=swap">'
       }
     ],
     __dangerouslyDisableSanitizers: ['noscript']

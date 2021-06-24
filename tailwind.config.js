@@ -13,7 +13,7 @@ module.exports = {
       fontFamily: {
         sans: ['Raleway', ...defaultTheme.fontFamily.sans],
         serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
-        accent: ['Fredericka the Great', ...defaultTheme.fontFamily.serif],
+        accent: ['Roboto Slab', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         gray: {
