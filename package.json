@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@nuxt/content": "^1.13.1",
+    "@nuxt/content": "^2.5.2",
     "nuxt": "^2.15.0"
   },
   "devDependencies": {
